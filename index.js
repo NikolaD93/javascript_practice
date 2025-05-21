@@ -1,6 +1,20 @@
-const dayjs = require('dayjs');
+//JS Modules
+//Import/Export
 
-dayjs.locale('es')
+// const hello = require('./hello').default;
+//! Named Import
+import { sayHello, sayHi, sayBye, renderCars } from './hello.js'
+import { getAllCars, getCar } from './fetchCars.js'
 
-// const date = dayjs('2025-05-19').locale('es').format();
-console.log(dayjs('2018-08-08').day() + 1)
+//! Default Import
+import pera from './hello.js'
+
+
+// console.log(sayHello())
+// console.log(pera(3, 3))
+// renderCars()
+// const cars = await getAllCars()
+// console.log(cars[0].updatedAt)
+
+// const singleCar = await getCar('681f6a7947ad680fe25c5fb6');
+// console.log(singleCar)
